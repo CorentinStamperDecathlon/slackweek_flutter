@@ -1,2 +1,1 @@
-# slackweek_flutter
-Flutter application using firestore
+# [SlackWeek] Learn Flutter
