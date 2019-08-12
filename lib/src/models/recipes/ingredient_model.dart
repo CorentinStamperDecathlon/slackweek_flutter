@@ -11,6 +11,18 @@ class IngredientModel {
     _label = json['label'];
   }
 
+  IngredientModel.create(double quantity, String unit, String label) {
+    _quantity = quantity;
+    _unit = unit;
+    _label = label;
+  }
+
+  IngredientModel.empty() {
+    _unit = "";
+    _quantity = 0;
+    _label = "";
+  }
+
   String get unit => _unit;
   double get quantity => _quantity;
   String get label => _label;

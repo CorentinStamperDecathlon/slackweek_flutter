@@ -1,6 +1,6 @@
+import 'package:cooking_recipes/src/ui/recipes/create/recipe_creation.dart';
 import 'package:cooking_recipes/src/ui/recipes/details/recipe_details.dart';
 import 'package:cooking_recipes/src/ui/recipes/list/recipe_item.dart';
-import 'package:cooking_recipes/src/ui/recipes/details/recipe_options.dart';
 import 'package:flutter/material.dart';
 import 'package:cooking_recipes/src/models/recipes/recipe_model.dart';
 import 'package:cooking_recipes/src/blocs/recipes/recipes_bloc.dart';
@@ -59,7 +59,9 @@ class RecipesList extends StatelessWidget {
   }
 
   void _onAddPressed(BuildContext context) {
-    // Todo: Navigate to /create
-    Scaffold.of(context).showSnackBar(SnackBar(content: Text('Not implemented yet')));
+    Navigator.pushNamed(
+      context,
+      RecipeCreation.routeName
+    );
   }
 }
